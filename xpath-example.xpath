@@ -1,0 +1,19 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <soap:Fault>
+         <faultcode>soap:Server</faultcode>
+         <faultstring xml:lang="en">RABAX occurred on server side</faultstring>
+         <detail>
+            <sap:Rabax xmlns:sap="http://www.sap.com/webas/710/soap/runtime/abap/fault/generic">
+               <SYDATUM>20180403</SYDATUM>
+               <SYUZEIT>012758</SYUZEIT>
+               <ERRORCODE>MESSAGE_TYPE_X_TEXT</ERRORCODE>
+            </sap:Rabax>
+         </detail>
+      </soap:Fault>
+   </soap:Body>
+</soap:Envelope>
+
+declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace sap='http://www.sap.com/webas/710/soap/runtime/abap/fault/generic';
+//sap:Rabax/ERRORCODE
